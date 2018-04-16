@@ -18,8 +18,8 @@ ENDIF ()
 
 # We want RelWithDebInfo to have the same optimization level as
 # Release, only differing in whether debugging information is enabled.
-SET(CMAKE_CXX_FLAGS_RELEASE        "-O3 -DNDEBUG")
-SET(CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O3 -DNDEBUG -g")
+SET(CMAKE_CXX_FLAGS_RELEASE        "-O0 -DNDEBUG")
+SET(CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O0 -DNDEBUG -g")
 SET(CMAKE_CXX_FLAGS_DEBUG          "-Og -g")
 
 SET(CB_CXX_FLAGS_NO_OPTIMIZE       -O0)

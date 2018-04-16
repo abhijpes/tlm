@@ -7,8 +7,8 @@ SET(CB_CLANGXX_THREAD "-pthread")
 
 # We want RelWithDebInfo to have the same optimization level as
 # Release, only differing in whether debugging information is enabled.
-SET(CMAKE_CXX_FLAGS_RELEASE        "-O3 -DNDEBUG")
-SET(CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O3 -DNDEBUG -g")
+SET(CMAKE_CXX_FLAGS_RELEASE        "-O0 -DNDEBUG")
+SET(CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O0 -DNDEBUG -g")
 
 # Make use of -Og (optimize for debugging) if available (Clang 4.0 upwards)
 check_cxx_compiler_flag(-Og HAVE_OPTIMIZE_FOR_DEBUG)
